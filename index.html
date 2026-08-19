@@ -14,7 +14,13 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo">Gergely Márta</a>
+      <a href="#" class="logo">
+        <svg class="logo-mark" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 16L10 10L14 14L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 6H20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>doingfine</span>
+      </a>
       <nav>
         <a href="#munkaim">Munkáim</a>
         <a href="#hogyan-dolgozom">Hogyan dolgozom</a>
@@ -27,25 +33,24 @@
 
   <main>
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <p class="eyebrow reveal">Webdesign portfólió</p>
-          <h1 class="reveal">Weboldal, ami<br><span class="accent-text">veled fejlődik.</span></h1>
-          <p class="lead reveal">Esztétikus, mobilbarát és felhasználóközpontú webes felületek tervezése. Kreativitás, modern technológia és folyamatos fejlődés egy helyen – közérthető magyarázattal, hogy mindig értsd, mi és miért történik.</p>
-          <div class="hero-buttons reveal">
-            <a href="#munkaim" class="btn">Projektjeim megtekintése</a>
-            <a href="#hogyan-dolgozom" class="btn btn-ghost">Hogyan dolgozom?</a>
-          </div>
+      <div class="container hero-content">
+        <p class="eyebrow reveal">Webdesign portfólió</p>
+        <h1 class="reveal">Weboldal, ami<br><span class="accent-text">veled fejlődik.</span></h1>
+        <p class="lead reveal">Esztétikus, mobilbarát és felhasználóközpontú webes felületek tervezése. Kreativitás, modern technológia és folyamatos fejlődés egy helyen – közérthető magyarázattal, hogy mindig értsd, mi és miért történik.</p>
+        <div class="hero-buttons reveal">
+          <a href="#munkaim" class="btn">Projektjeim megtekintése</a>
+          <a href="#hogyan-dolgozom" class="btn btn-ghost">Hogyan dolgozom?</a>
         </div>
-        <div class="hero-photo reveal">
-          <img src="IMG_7682.jpeg" alt="Gergely Márta">
+        <div class="hero-signature reveal">
+          <img src="IMG_7682.jpeg" alt="Gergely Márta" class="avatar">
+          <span>Gergely Márta — webdesigner</span>
         </div>
       </div>
 
       <div class="container feature-trio">
         <div class="feature-card reveal">
           <h3>Esztétikus felületek</h3>
-          <p>Letisztult, karakteres design, ami a te márkádra van szabva, nem sablonra.</p>
+          <p>Letisztult, karakteres design, ami a te márkádra van szabva – nem sablonra.</p>
         </div>
         <div class="feature-card reveal">
           <h3>Mobilbarát megjelenés</h3>
@@ -70,44 +75,64 @@
 
         <div class="compare reveal" aria-label="Csúszka: régi és megújult weboldal összehasonlítása" style="--pos:50%">
           <div class="compare-after">
-            <div class="mock mock-dark">
-              <div class="mock-dark-nav">
-                <span class="mock-brand"><span class="mock-dot"></span>Hotel Solaris</span>
-                <span class="mock-nav-btn">Foglalás</span>
+            <div class="mock mock-light">
+              <div class="mock-light-nav">
+                <span class="mock-light-logo">✦ Hotel Solaris</span>
+                <span class="mock-light-links">
+                  <span class="mock-line"></span>
+                  <span class="mock-line"></span>
+                  <span class="mock-line"></span>
+                </span>
+                <span class="mock-light-cta">Foglalás</span>
               </div>
-              <div class="mock-dark-hero">
-                <span class="mock-tag">SZÁLLODA</span>
-                <span class="mock-heading">Nyugalom a<br>Duna partján</span>
-                <span class="mock-sub">Elegáns szobák, közvetlenül a folyóparton.</span>
-                <span class="mock-btn">Szobák megtekintése</span>
+              <div class="mock-light-hero">
+                <div class="mock-photo-warm"></div>
+                <div class="mock-light-copy">
+                  <span class="mock-tag-light">WELLNESS SZÁLLODA</span>
+                  <span class="mock-heading-light">Pihenés.<br>Feltöltődés.</span>
+                  <span class="mock-btn-light">Foglalás →</span>
+                </div>
               </div>
-              <div class="mock-dark-features">
+              <div class="mock-light-features">
+                <span>Szobák</span>
                 <span>Wellness</span>
                 <span>Étterem</span>
-                <span>Ingyenes parkolás</span>
+                <span>Akciók</span>
               </div>
             </div>
           </div>
           <div class="compare-before">
-            <div class="mock mock-old">
-              <div class="mock-old-bar">★ ÜDVÖZÖLJÜK A NAPFÉNY PANZIÓ HONLAPJÁN! ★</div>
-              <div class="mock-old-banner"></div>
-              <div class="mock-old-body">
-                <div class="mock-old-top">
-                  <div class="mock-old-nav">
-                    <span>Kezdőlap</span>
-                    <span>Szobák</span>
-                    <span>Étterem</span>
-                    <span>Árak</span>
-                    <span>Vendégkönyv</span>
-                    <span>Kapcsolat</span>
-                  </div>
-                  <div class="mock-old-side">
-                    <span class="mock-old-badge">AKCIÓ!!!</span>
-                    <span class="mock-old-price">Szoba/éj: 8900 Ft-tól</span>
-                  </div>
+            <div class="mock mock-dated">
+              <div class="mock-dated-topbar">H-8380 Encs, Fő u. 1. · Tel.: 06 (46) 000-000</div>
+              <div class="mock-dated-header">
+                <span class="mock-dated-stars">★★★</span>
+                <span class="mock-dated-name">Hotel Solaris</span>
+              </div>
+              <div class="mock-dated-tabs">
+                <span>Kezdőlap</span>
+                <span>Szobák</span>
+                <span>Wellness</span>
+                <span>Étterem</span>
+                <span>Árak</span>
+                <span>Kapcsolat</span>
+              </div>
+              <div class="mock-dated-body">
+                <div class="mock-dated-sidebar">
+                  <span class="mock-dated-widget-title">Online foglalás</span>
+                  <span class="mock-dated-field"></span>
+                  <span class="mock-dated-field"></span>
+                  <span class="mock-dated-btn">Keresés »</span>
                 </div>
-                <span class="mock-old-counter">Ön a 021734. látogató</span>
+                <div class="mock-dated-main">
+                  <div class="mock-photo-old"></div>
+                  <span class="mock-dated-text">Üdvözöljük szállodánk weboldalán!</span>
+                </div>
+                <div class="mock-dated-sidebar mock-dated-right">
+                  <span class="mock-dated-widget-title">Wellness</span>
+                  <span class="mock-dated-line"></span>
+                  <span class="mock-dated-line"></span>
+                  <span class="mock-dated-line"></span>
+                </div>
               </div>
             </div>
           </div>
@@ -129,18 +154,20 @@
           </ul>
           <p class="note">Következő projektek: <strong>hamarosan</strong> – a friss munkák ide kerülnek fel, ugyanilyen összehasonlítással.</p>
         </div>
+
+        <p class="photo-note reveal">📷 Igény esetén saját fotózással is dolgozom, hogy a végeredmény minél egyedibb és személyesebb legyen.</p>
       </div>
     </section>
 
     <section id="hogyan-dolgozom" class="alt-block">
       <div class="container">
         <p class="eyebrow reveal">Hogyan dolgozom</p>
-        <h2 class="reveal">Négy lépés</h2>
+        <h2 class="reveal">Négy lépés, semmi szakzsargon</h2>
         <div class="steps">
           <div class="step-card reveal">
             <span class="step-num">01</span>
             <h3>Beszélgetés</h3>
-            <p>Végigvesszük, kiknek szól az oldal, és mit szeretnél elérni vele.</p>
+            <p>Végigvesszük, kiknek szól az oldal, és mit szeretnél elérni vele. Kérdezek sokat – ez a legfontosabb rész.</p>
           </div>
           <div class="step-card reveal">
             <span class="step-num">02</span>
@@ -150,7 +177,7 @@
           <div class="step-card reveal">
             <span class="step-num">03</span>
             <h3>Megvalósítás</h3>
-            <p>Megépítem az oldalt, közben végig látod, hol tartunk.</p>
+            <p>Megépítem az oldalt, közben végig látod, hol tartunk. Nincsenek meglepetések.</p>
           </div>
           <div class="step-card reveal">
             <span class="step-num">04</span>
@@ -169,7 +196,7 @@
         <div class="reveal">
           <p class="eyebrow">Aki dolgozik veled</p>
           <h2>Nem ügynökség, hanem egy ember, aki végig ott van</h2>
-          <p class="lead">Amit adok: kérdésekre gyors, érthető válasz, egyeztetett határidők és egy oldal, amit utána is bátran használsz. Ha valami nem világos, örömmel elmgyarézom.</p>
+          <p class="lead">Amit adok: kérdésekre gyors, érthető válasz, egyeztetett határidők és egy oldal, amit utána is bátran használsz. Ha valami nem világos, elmagyarázom – kétszer is.</p>
           <a href="#kapcsolat" class="btn">Beszéljük át a projektedet</a>
         </div>
       </div>
