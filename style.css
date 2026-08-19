@@ -56,6 +56,7 @@ h1, h2, h3 {
   justify-content: space-between;
   padding: 1.3rem 2rem;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -74,6 +75,7 @@ nav a {
   font-weight: 500;
   color: var(--ink-muted);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 nav a:hover { color: var(--accent); }
@@ -81,6 +83,7 @@ nav a:hover { color: var(--accent); }
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.85rem 1.7rem;
   background: var(--accent);
@@ -122,7 +125,7 @@ nav a:hover { color: var(--accent); }
   align-items: center;
 }
 
-h1 { font-size: clamp(2.6rem, 5.5vw, 4rem); line-height: 1.08; margin-bottom: 1.5rem; }
+h1 { font-size: clamp(2.2rem, 5.5vw, 4rem); line-height: 1.1; margin-bottom: 1.5rem; }
 
 .accent-text { color: var(--accent); }
 
@@ -159,11 +162,11 @@ section { padding: 5rem 0; }
 
 .alt-block { background: var(--bg-alt); }
 
-h2 { font-size: clamp(1.9rem, 3.5vw, 2.5rem); margin-bottom: 1.25rem; }
+h2 { font-size: clamp(1.7rem, 3.5vw, 2.5rem); margin-bottom: 1.25rem; }
 
 .compare {
   position: relative;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
   border-radius: 20px;
   overflow: hidden;
   margin: 2rem 0;
@@ -177,21 +180,61 @@ h2 { font-size: clamp(1.9rem, 3.5vw, 2.5rem); margin-bottom: 1.25rem; }
 .mock { width: 100%; height: 100%; display: flex; flex-direction: column; }
 
 .mock-dark { background: #17233a; color: #eef1f7; }
-.mock-dark-nav { display: flex; align-items: center; gap: 0.6rem; padding: 1rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
-.mock-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
-.mock-line.short { width: 44px; height: 8px; border-radius: 4px; background: rgba(255,255,255,0.25); }
-.mock-dark-body { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 1.1rem; padding: 1.5rem; }
-.mock-tag { font-size: 0.7rem; letter-spacing: 0.15em; color: var(--accent-light); font-weight: 600; }
-.mock-heading { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: clamp(1.2rem, 3vw, 1.8rem); line-height: 1.2; }
-.mock-btn { align-self: flex-start; background: var(--accent); color: #fff; padding: 0.5rem 1.1rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600; }
+
+.mock-dark-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mock-brand { display: flex; align-items: center; gap: 0.4rem; font-weight: 700; font-size: 0.8rem; }
+.mock-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+.mock-nav-btn { background: rgba(255,255,255,0.14); padding: 0.3rem 0.75rem; border-radius: 999px; font-size: 0.65rem; font-weight: 600; }
+
+.mock-dark-hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.5rem;
+}
+
+.mock-tag { font-size: 0.65rem; letter-spacing: 0.15em; color: var(--accent-light); font-weight: 600; }
+.mock-heading { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: clamp(1rem, 3vw, 1.7rem); line-height: 1.2; }
+.mock-sub { font-size: 0.78rem; color: rgba(238,241,247,0.7); max-width: 30ch; }
+.mock-btn { align-self: flex-start; background: var(--accent); color: #fff; padding: 0.5rem 1.1rem; border-radius: 999px; font-size: 0.78rem; font-weight: 600; }
+
+.mock-dark-features {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0 1.25rem 1.25rem;
+  flex-wrap: wrap;
+}
+
+.mock-dark-features span {
+  background: rgba(255,255,255,0.08);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+}
 
 .mock-old { background: #fdf6d8; font-family: "Comic Sans MS", "Trebuchet MS", cursive; color: #1a1a1a; }
-.mock-old-bar { background: linear-gradient(90deg, #1a3fa0, #2f5fd6); color: #ffe45e; font-size: 0.75rem; font-weight: 700; text-align: center; padding: 0.6rem; letter-spacing: 0.02em; }
-.mock-old-body { flex: 1; padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 0.8rem; }
-.mock-old-nav { display: flex; flex-direction: column; gap: 0.35rem; }
-.mock-old-nav span { color: #1a3fa0; text-decoration: underline; font-size: 0.8rem; }
-.mock-old-badge { align-self: flex-start; background: #e0332f; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 0.3rem 0.6rem; transform: rotate(-3deg); }
-.mock-old-counter { margin-top: auto; font-size: 0.7rem; background: #fff; border: 1px solid #999; display: inline-block; padding: 0.25rem 0.5rem; width: fit-content; }
+.mock-old-bar { background: linear-gradient(90deg, #1a3fa0, #2f5fd6); color: #ffe45e; font-size: 0.68rem; font-weight: 700; text-align: center; padding: 0.5rem; }
+.mock-old-banner { height: 18%; background: repeating-linear-gradient(45deg, #7fa8d9, #7fa8d9 6px, #5a86bd 6px, #5a86bd 12px); border-bottom: 3px solid #1a3fa0; }
+
+.mock-old-body { flex: 1; display: flex; flex-direction: column; padding: 0.65rem 0.85rem; gap: 0.5rem; }
+.mock-old-top { display: flex; gap: 0.9rem; flex: 1; }
+.mock-old-nav { display: flex; flex-direction: column; gap: 0.28rem; flex: 1; }
+.mock-old-nav span { color: #1a3fa0; text-decoration: underline; font-size: 0.66rem; }
+
+.mock-old-side { display: flex; flex-direction: column; gap: 0.4rem; align-items: flex-end; }
+.mock-old-badge { background: #e0332f; color: #fff; font-size: 0.58rem; font-weight: 700; padding: 0.22rem 0.45rem; transform: rotate(-3deg); }
+.mock-old-price { font-size: 0.6rem; background: #fff; border: 2px solid #1a3fa0; padding: 0.25rem 0.4rem; font-weight: 700; }
+.mock-old-counter { font-size: 0.56rem; background: #fff; border: 1px solid #999; padding: 0.18rem 0.4rem; width: fit-content; }
 
 .compare-handle {
   position: absolute;
@@ -215,7 +258,7 @@ h2 { font-size: clamp(1.9rem, 3.5vw, 2.5rem); margin-bottom: 1.25rem; }
 .compare-label {
   position: absolute;
   top: 1rem;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: #fff;
@@ -288,15 +331,46 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 @media (max-width: 900px) {
   .hero-grid, .trust-grid { grid-template-columns: 1fr; }
-  .hero-photo { order: -1; max-width: 320px; margin: 0 auto; }
+  .hero-photo, .trust-photo { max-width: 320px; margin: 0 auto; }
+  .hero-photo { order: -1; }
   .feature-trio { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
-  .header-inner { padding: 1.1rem 1.25rem; flex-wrap: wrap; }
-  nav { gap: 1rem; order: 3; width: 100%; justify-content: center; }
+  .header-inner { padding: 1rem 1.25rem; }
+  .logo { order: 1; }
+  .btn-sm { order: 2; }
+  nav {
+    order: 3;
+    flex: 1 0 100%;
+    flex-wrap: nowrap;
+    gap: 1.25rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.2rem;
+    scrollbar-width: none;
+  }
+  nav::-webkit-scrollbar { display: none; }
+
   .container { padding: 0 1.25rem; }
-  section { padding: 3.5rem 0; }
-  .feature-trio, .steps { grid-template-columns: 1fr; }
+  section { padding: 3.25rem 0; }
+  .hero { padding: 2.5rem 0 2rem; }
+  .feature-trio { margin-top: 2.5rem; grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+
+  .hero-buttons { flex-direction: column; }
+  .hero-buttons .btn { width: 100%; }
+
+  .feature-card, .step-card, .card { padding: 1.35rem; }
+
+  .compare { aspect-ratio: 3 / 4; }
+  .mock-old-top { flex-direction: column; gap: 0.5rem; }
+  .mock-old-side { flex-direction: row; align-items: center; gap: 0.4rem; }
+  .mock-sub { display: none; }
+}
+
+@media (max-width: 380px) {
+  h1 { font-size: 2rem; }
+  .compare-handle { width: 38px; height: 38px; }
 }
