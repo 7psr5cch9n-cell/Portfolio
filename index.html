@@ -7,78 +7,186 @@
   <meta name="description" content="Gergely Márta – esztétikus, mobilbarát és felhasználóközpontú webes felületek tervezése.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo" aria-label="doingfine – kezdőlap">
-        <svg class="logo-mark" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M4 16L10 10L14 14L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M14 6H20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="logo-word">doingfine</span>
-      </a>
+      <a href="#" class="logo">Gergely Márta</a>
       <nav>
-        <a href="#rolam">Rólam</a>
-        <a href="#projektek">Projektek</a>
+        <a href="#munkaim">Munkáim</a>
+        <a href="#hogyan-dolgozom">Hogyan dolgozom</a>
+        <a href="#aki-dolgozik-veled">Aki dolgozik veled</a>
         <a href="#kapcsolat">Kapcsolat</a>
       </nav>
+      <a href="#kapcsolat" class="btn btn-sm">Írj nekem</a>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="rolam">
-      <svg class="hero-mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M4 16L10 10L14 14L20 6" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M14 6H20V12" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <div class="container">
-        <p class="eyebrow reveal">Webdesign portfólió</p>
-        <h1 class="display-name">
-          <span class="line reveal">Gergely</span>
-          <span class="line line-accent reveal">Márta</span>
-        </h1>
-        <p class="lead reveal">Esztétikus, mobilbarát és felhasználóközpontú webes felületek tervezése. Kreativitás, modern technológia és folyamatos fejlődés egy helyen.</p>
-        <a href="#projektek" class="btn reveal">
-          Projektjeim megtekintése
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M6 18L18 6M18 6H9M18 6V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow reveal">Webdesign portfólió</p>
+          <h1 class="reveal">Weboldal, ami<br><span class="accent-text">veled fejlődik.</span></h1>
+          <p class="lead reveal">Esztétikus, mobilbarát és felhasználóközpontú webes felületek tervezése. Kreativitás, modern technológia és folyamatos fejlődés egy helyen — közérthető magyarázattal, hogy mindig értsd, mi és miért történik.</p>
+          <div class="hero-buttons reveal">
+            <a href="#munkaim" class="btn">Projektjeim megtekintése</a>
+            <a href="#hogyan-dolgozom" class="btn btn-ghost">Hogyan dolgozom?</a>
+          </div>
+        </div>
+        <div class="hero-photo reveal">
+          <img src="IMG_7682.jpeg" alt="Gergely Márta">
+        </div>
+      </div>
+
+      <div class="container feature-trio">
+        <div class="feature-card reveal">
+          <h3>Esztétikus felületek</h3>
+          <p>Letisztult, karakteres design, ami a te márkádra van szabva — nem sablonra.</p>
+        </div>
+        <div class="feature-card reveal">
+          <h3>Mobilbarát megjelenés</h3>
+          <p>Minden nézetben kényelmes: telefonon, tableten és nagy monitoron egyaránt.</p>
+        </div>
+        <div class="feature-card reveal">
+          <h3>Felhasználóközpontú logika</h3>
+          <p>Az oldal úgy vezeti a látogatót, hogy magától megtalálja, amit keres.</p>
+        </div>
+        <div class="feature-card reveal">
+          <h3>Modern technológia</h3>
+          <p>Gyorsan betöltő, jól kereshető oldalak mai eszközökkel, folyamatos fejlődéssel.</p>
+        </div>
       </div>
     </section>
 
-    <section class="dark-block" id="projektek">
+    <section id="munkaim">
       <div class="container">
-        <p class="eyebrow eyebrow-light reveal">Munkáim</p>
+        <p class="eyebrow reveal">Munkáim</p>
         <h2 class="reveal">Projektek</h2>
-        <article class="card reveal">
-          <h3>Hamarosan</h3>
-          <p>Itt fognak megjelenni a projektjeim, előtte/utána képekkel, egy interaktív csúszkával.</p>
-        </article>
+        <p class="lead reveal">A projektjeim előtte/utána képekkel jelennek meg. Húzd el a csúszkát, és látod, mit jelent a gyakorlatban egy felújított weboldal.</p>
+
+        <div class="compare reveal" aria-label="Csúszka: régi és megújult weboldal összehasonlítása" style="--pos:50%">
+          <div class="compare-after">
+            <div class="mock mock-dark">
+              <div class="mock-dark-nav">
+                <span class="mock-dot"></span>
+                <span class="mock-line short"></span>
+                <span class="mock-line short"></span>
+                <span class="mock-line short"></span>
+              </div>
+              <div class="mock-dark-body">
+                <span class="mock-tag">STÚDIÓ</span>
+                <span class="mock-heading">Letisztult.<br>Modern.<br>Hatékony.</span>
+                <span class="mock-btn">Kapcsolat</span>
+              </div>
+            </div>
+          </div>
+          <div class="compare-before">
+            <div class="mock mock-old">
+              <div class="mock-old-bar">★ ÜDVÖZÖLJÜK A KISVÁLLALKOZÁS HONLAPJÁN! ★</div>
+              <div class="mock-old-body">
+                <div class="mock-old-nav">
+                  <span>Kezdőlap</span>
+                  <span>Szolgáltatásaink</span>
+                  <span>Rólunk</span>
+                  <span>Vendégkönyv</span>
+                  <span>Kapcsolat</span>
+                </div>
+                <div class="mock-old-badge">ÚJDONSÁG!</div>
+                <div class="mock-old-counter">Ön a 021734. látogató</div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="compare-handle" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 6L2 12L8 18M16 6L22 12L16 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="compare-label label-before">ELŐTTE</span>
+          <span class="compare-label label-after">UTÁNA</span>
+        </div>
+
+        <div class="card reveal">
+          <h3>Példa: elavult oldalból mai megjelenés</h3>
+          <p>Ugyanaz a tartalom, teljesen más élmény. A cél nem a díszítés, hanem hogy a látogató két másodperc alatt értse, hol van és mit tud itt elintézni.</p>
+          <ul class="check-list">
+            <li>Tiszta szerkezet a zsúfolt kezdőlap helyett</li>
+            <li>Egy világos, kiemelt cselekvésre hívás</li>
+            <li>Olvasható tipográfia és nyugodt színek</li>
+            <li>Telefonon is kényelmes használat</li>
+          </ul>
+          <p class="note">Következő projektek: <strong>hamarosan</strong> — a friss munkák ide kerülnek fel, ugyanilyen összehasonlítással.</p>
+        </div>
       </div>
     </section>
 
-    <section id="kapcsolat">
+    <section id="hogyan-dolgozom" class="alt-block">
       <div class="container">
+        <p class="eyebrow reveal">Hogyan dolgozom</p>
+        <h2 class="reveal">Négy lépés, semmi szakzsargon</h2>
+        <div class="steps">
+          <div class="step-card reveal">
+            <span class="step-num">01</span>
+            <h3>Beszélgetés</h3>
+            <p>Végigvesszük, kiknek szól az oldal, és mit szeretnél elérni vele. Kérdezek sokat — ez a legfontosabb rész.</p>
+          </div>
+          <div class="step-card reveal">
+            <span class="step-num">02</span>
+            <h3>Terv</h3>
+            <p>Struktúra és látványterv, amit még egy sor kód előtt látsz és véleményezhetsz.</p>
+          </div>
+          <div class="step-card reveal">
+            <span class="step-num">03</span>
+            <h3>Megvalósítás</h3>
+            <p>Megépítem az oldalt, közben végig látod, hol tartunk. Nincsenek meglepetések.</p>
+          </div>
+          <div class="step-card reveal">
+            <span class="step-num">04</span>
+            <h3>Átadás és támogatás</h3>
+            <p>Megmutatom, hogyan tudod használni, és utána sem hagylak magadra.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aki-dolgozik-veled">
+      <div class="container trust-grid">
+        <div class="trust-photo reveal">
+          <img src="IMG_7682.jpeg" alt="Gergely Márta">
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Aki dolgozik veled</p>
+          <h2>Nem ügynökség, hanem egy ember, aki végig ott van</h2>
+          <p class="lead">Gergely Márta vagyok, webdesignnal foglalkozom. Azért tettem ki a képem, hogy tudd, kivel fogsz levelezni és beszélni — de a munkámról szeretnék meggyőzni, nem magamról.</p>
+          <p class="lead">Amit adok: kérdésekre gyors, érthető válasz, egyeztetett határidők, és egy oldal, amit utána is bátran használsz. Ha valami nem világos, elmagyarázom — kétszer is.</p>
+          <a href="#kapcsolat" class="btn">Beszéljük át a projektedet</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="kapcsolat" class="alt-block">
+      <div class="container contact-block">
         <p class="eyebrow reveal">Vegyük fel a kapcsolatot</p>
         <h2 class="reveal">Kapcsolat</h2>
-      <div class="card reveal">
-  <h3>Hamarosan</h3>
-  <p>Az elérhetőségeim itt fognak megjelenni, amint az oldal teljesen elkészül.</p>
-</div>
-
-
+        <div class="card reveal contact-card">
+          <h3>Hamarosan</h3>
+          <p>Az elérhetőségeim itt fognak megjelenni, amint az oldal teljesen elkészül.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2026 Gergely Márta — doingfine</p>
+    <div class="container footer-inner">
+      <p>&copy; 2026 Gergely Márta · Webdesign portfólió</p>
+      <p class="footer-brand">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 16L10 10L14 14L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 6H20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        doingfine.hu
+      </p>
     </div>
   </footer>
 
@@ -98,7 +206,30 @@
     } else {
       document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('visible'); });
     }
+
+    document.querySelectorAll('.compare').forEach(function(el) {
+      var handle = el.querySelector('.compare-handle');
+      function setPos(clientX) {
+        var rect = el.getBoundingClientRect();
+        var pct = ((clientX - rect.left) / rect.width) * 100;
+        pct = Math.max(0, Math.min(100, pct));
+        el.style.setProperty('--pos', pct + '%');
+      }
+      handle.addEventListener('pointerdown', function(e) {
+        handle.setPointerCapture(e.pointerId);
+        function move(ev) { setPos(ev.clientX); }
+        function up() {
+          handle.removeEventListener('pointermove', move);
+          handle.removeEventListener('pointerup', up);
+        }
+        handle.addEventListener('pointermove', move);
+        handle.addEventListener('pointerup', up);
+      });
+      el.addEventListener('click', function(e) {
+        if (e.target === handle || handle.contains(e.target)) return;
+        setPos(e.clientX);
+      });
+    });
   </script>
 </body>
 </html>
-<!-- frissítve -->
