@@ -127,10 +127,10 @@ nav a:hover::after { transform: scaleX(1); }
   padding: 7rem 0 6rem;
   overflow: hidden;
   background:
-    repeating-linear-gradient(115deg, rgba(27,42,77,0.035) 0px, rgba(27,42,77,0.035) 1px, transparent 1px, transparent 72px),
     radial-gradient(650px circle at 88% -10%, rgba(27,42,77,0.1), transparent 60%),
     radial-gradient(420px circle at -10% 60%, rgba(27,42,77,0.06), transparent 60%);
 }
+
 
 .hero-mark {
   position: absolute;
